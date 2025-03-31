@@ -1,9 +1,5 @@
 <template>
-    <div class="h-dvh flex justify-center items-center">
-        <div class="flex flex-col gap-y-4">
-            <RouterView />
-        </div>
-    </div>
+    <RouterView />
 </template>
 
 
@@ -11,7 +7,18 @@
 
 
 <script lang="ts" setup>
+// Import: Components
+
+// Import: Stores
+import useStoreTheme from "@/stores/useStoreTheme"
+
+// Import: Other
 import { useTitle } from "@vueuse/core"
+
+// ### Component logic
+
+const storeTheme = useStoreTheme()
+storeTheme.colorMode
 
 useTitle("template-vue-tailwind-3")
 </script>

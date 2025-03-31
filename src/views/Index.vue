@@ -1,6 +1,5 @@
 <template>
-    <h1 class="text-9xl">Index</h1>
-    <ButtonSwitchColorMode />
+    <h1 class="text-2xl">Index</h1>
 </template>
 
 
@@ -8,5 +7,10 @@
 
 
 <script lang="ts" setup>
-import ButtonSwitchColorMode from "@/components/buttons/ButtonSwitchColorMode.vue"
+// Components
+
+// Stores
+
+// Other
+
 </script>
